@@ -1,0 +1,27 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2673
+
+*smarttill* is a Vim plugin to provide {motion}s like |t| and |T|, but they
+are smarter than the built-in ones in some sense.  For example, if you edit
+the following text and you want to delete a partial text from the cursor till
+before a comma, you have to type "dt," (here "|" means the cursor position):
+
+		...|Yo DJ, pump this party! ...
+		    ^^^^^
+
+But it's somewhat annoying to type another character to specify where the
+cursor should be moved to explicitly.  It's useful if there is a motion to
+move the cursor till before comma, period or other punctuations without
+specifying a character.  smarttill provides the features as
+|<Plug>(smarttill-t)| and |<Plug>(smarttill-T)|.
+
+See also |smarttill-examples| for customization.
+
+
+Requirements:
+- Vim 7.2 or later
+
+Latest version:
+http://github.com/kana/vim-smarttill
+
+Document in HTML format:
+http://kana.github.com/config/vim/smarttill.html
